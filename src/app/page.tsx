@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import { ConnectButton } from '@rainbow-me/rainbowkit'
 
 export default function Home() {
@@ -30,8 +32,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="connect-wallet">
+      <div id="connect-wallet" className="flex  gap-8">
         <ConnectButton />
+
+        <Badge>with Shadcn UI</Badge>
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
